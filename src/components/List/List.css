@@ -1,0 +1,41 @@
+.list {
+    list-style: none;
+    animation: items-appear 1s ease-out forwards;
+}
+
+
+.list_item {
+    border: 1px solid #F2F0F3;
+    margin-bottom: 0.5rem;
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3rem;
+    transition: 0.3s font-size;
+}
+
+.proceed {
+    padding: 1rem;
+    cursor: pointer;
+    color: var(--THEMECOLOR);
+    font-weight: bold;
+    font-size: larger;
+    background-color: var(--LIGHT-THEMECOLOR);
+}
+
+.list_item:hover, .list_item:focus {
+    font-size: 1.15rem;
+}
+
+@keyframes items-appear {
+    from {
+      opacity: 0;
+      transform: translateY(3rem);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

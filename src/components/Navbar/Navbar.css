@@ -1,0 +1,28 @@
+.navbar_container {
+    position: sticky;
+    bottom: 0;
+    width: inherit;
+    border-top: 1px solid;
+    background-color: white;
+}
+
+.navbar_container ul {
+    list-style: none;
+    padding: 0.5rem 2rem 1rem;
+    display: flex;
+    z-index: 2;
+    justify-content: space-evenly;
+}
+
+.navbar_container ul li {
+    text-align: center;
+}
+.navbar_container ul a {
+    text-decoration: none;
+    color: black;
+    transition: 0.1s color;
+}
+
+.navbar_container ul a:hover, .navbar_container ul a.active {
+    color: var(--THEMECOLOR);
+}

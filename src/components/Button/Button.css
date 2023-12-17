@@ -1,0 +1,41 @@
+.default {
+    color: whitesmoke;
+    background-color: var(--THEMECOLOR);
+    border-radius: 2px;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--THEMECOLOR);
+    font-weight: bold;
+    width: fit-content;
+    box-shadow: 0px 1px 2px 0px #32006f;
+    cursor: pointer;
+    transition: color 0.5s, background-color 0.5s ;
+}
+
+.large_btn {
+    background-color: var(--LIGHT-THEMECOLOR);
+    color: black;
+    font-weight: 600;
+    width: auto;
+}
+
+.large_btn div {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3rem;
+}
+
+.large_btn div p:nth-child(2) {
+    color: var(--THEMECOLOR);
+    cursor: pointer;
+}
+
+.sheet-test-btn {
+    width: 50%;
+}
+
+.out-focus {
+    background-color: var(--LIGHT-THEMECOLOR);
+    color: black;
+    border: none;
+    box-shadow: none;
+}

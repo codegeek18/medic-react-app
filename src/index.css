@@ -1,3 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+:root {
+    --THEMECOLOR: rgb(152, 77, 245);
+    --LIGHT-THEMECOLOR: rgb(234,219,251);
+    --ALT-TEXTCOLOR: #FFFFFF;
+    --BOLD-FONTWEIGHT: bolder;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +18,28 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.App {
+  width: 768px;
+  max-width: 768px;
+  min-height: 100vh;
+  height: max-content;
+  background-color: var(--ALT-TEXTCOLOR);
+  position: absolute;
+  left: 25%;
+}
+
+.chats-doctors-profile {
+  display: grid;
+  padding: 40% 0;
+  justify-content: center;
+  font-size: 4rem;
+  font-weight: bold;
 }
